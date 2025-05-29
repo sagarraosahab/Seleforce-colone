@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#header {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5rem;
+}
+
+#logo {
+    width: 90px;
+    object-fit: cover;
+}
+
+.text {
+    color: rgb(14, 14, 78);
+    font-size: large;
+}
+
+.text:hover {
+    color: rgb(4, 176, 176);
+}
+
+#contect {
+    font-size: large;
+    color: black;
+    font-weight: normal;
+}
+
+u {
+    color: rgb(76, 88, 76);
+    text-decoration: underline;
+}
+
+.icon {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icon:hover {
+    background-color: lightblue;
+}
+
+#login {
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+}
+
+#login:hover {
+    background-color: lightblue;
+}
+
+#try {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+#try:hover {
+    background-color: black;
+}
+
+button {
+    height: 30px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#fakeHeader {
+    height: 10%;
+    width: 100%;
+    background-color: white;
+}
+
+#page1 {
+    width: 100%;
+    min-height: 90%;
+    background-color: white;
+    text-align: center;
+    padding-top: 10%;
+}
+
+#split {
+    width: 100%;
+    background-color: rgb(9, 9, 102);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#split u {
+    padding: 10px;
+    color: white;
+}
+
+#car {
+    width: 100%;
+    min-height: 75%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#box1, #box2 {
+    width: 50%;
+    height: auto;
+}
+
+#box1 {
+    background-color: white;
+    padding: 20px;
+}
+
+#box1 h1 {
+    margin: 30px 10px;
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(6, 6, 83);
+}
+
+#box1 p {
+    padding: 20px;
+    margin: 20px 10px;
+    font-size: x-large;
+}
+
+#btn {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#button1,
+#button2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#button1 {
+    background-color: skyblue;
+    color: aliceblue;
+    border: none;
+}
+
+#button1:hover {
+    background-color: rgb(6, 56, 72);
+}
+
+#button2 {
+    background-color: white;
+    color: skyblue;
+    border: 2px solid skyblue;
+}
+
+#button2:hover {
+    background-color: rgb(148, 149, 150);
+    color: rgb(20, 60, 76);
+}
+
+#box2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: contrast(1.1) brightness(1.05);
+}
+
+#heading {
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+    color: rgb(9, 9, 86);
+    font-size: 24px;
+    text-align: center;
+}
+
+#page2 {
+    width: 100%;
+    min-height: 90%;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#page2 u {
+    font-size: 20px;
+}
+
+#page2 u:hover {
+    color: rgb(143, 143, 77);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    #logo {
+        width: 70px;
+    }
+
+    .text, #contect {
+        font-size: medium;
+    }
+
+    #car {
+        flex-direction: column;
+    }
+
+    #box1, #box2 {
+        width: 100%;
+    }
+
+    #box1 h1 {
+        font-size: 36px;
+    }
+
+    #box1 p {
+        font-size: large;
+    }
+
+    #btn {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #button1, #button2 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #logo {
+        width: 60px;
+    }
+
+    .text, #contect {
+        font-size: small;
+    }
+
+    #box1 h1 {
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    #box1 p {
+        font-size: medium;
+        padding: 10px;
+    }
+
+    #btn {
+        padding: 5px;
+    }
+
+    #button1, #button2 {
+        font-size: 14px;
+        width: 90%;
+        padding: 8px;
+    }
+
+    #try {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #split {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #heading {
+        font-size: 20px;
+    }
+
+    #page2 u {
+        font-size: 16px;
+    }
+}
