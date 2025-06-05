@@ -16,16 +16,15 @@ html, body {
 }
 
 #header {
-    height: 50px;
+    height: 10%;
     width: 100%;
     background-color: white;
     position: fixed;
-    top: 0;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 5rem;
+    padding: 40px 1rem;
 }
 
 #logo {
@@ -93,18 +92,12 @@ button {
     cursor: pointer;
 }
 
-#fakeHeader {
-    height: 10%;
-    width: 100%;
-    background-color: white;
-}
-
 #page1 {
     width: 100%;
-    min-height: 90%;
+    min-height: 100%;
     background-color: white;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 #split {
